@@ -13,6 +13,7 @@ const Display = (props) => {
   const handleClick = () => {
     fetchShow().then(data => {
       setShow(data);
+      console.log(data)
 
       if (displayFunc) {
         displayFunc();
@@ -22,6 +23,7 @@ const Display = (props) => {
 
   const handleSelect = e => {
     setSelectedSeason(e.target.value);
+   
   };
 
   return (
